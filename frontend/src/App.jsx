@@ -1,9 +1,14 @@
 import React from 'react'
-
+import { Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home.jsx'
+import Blog from './Pages/Blog.jsx'
 const App = () => {
   return (
     <div>
-      <h1>Inside Jain</h1>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/blog' element={<Blog />} />
+      </Routes>
     </div>
   )
 }
